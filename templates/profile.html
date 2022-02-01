@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    </head>
+    <title>MindLevelled - HomePage</title>
+    <style>
+            ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+        }
+
+        li {
+          float: left;
+        }
+
+        li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+          background-color: #111;
+        }
+
+        .active {
+          background-color: #04AA6D;
+        }
+
+
+
+        .profile{
+            Display:Inline-Flex;
+            justify-content:space-between;
+            width:100%;
+            }
+
+          .avatar img{
+
+
+
+          }
+
+          }
+
+        .button {
+          background-color: #4CAF50;
+          border: none;
+          color: white;
+          padding: 15px 32px;
+          text-align: right;
+          text-decoration: none;
+          display: right;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+          border-radius:25%;
+        	height:50px;
+        }
+          .prem, .badges{
+            color:black;
+            font-size:1.5rem;
+            background-color:lightblue;
+            padding:5px;
+            border-radius:5%;
+          }
+
+          .perks{
+              background-color:lightblue;
+          }
+
+        img{
+            height:200px;
+        }
+
+        button{
+            width:100%;
+        }
+    </style>
+
+    <body>
+        <ul>
+            <li><a href="/">HOME</a></li>
+            <li><a href="/news">NEWS</a></li>
+            <li><a href="/contact">CONTACT</a></li>
+            <li><a href="/blog">BLOG</a></li>
+            <li style="float: right;"><a class="active" href="/api/createpost">Create Post</a></li>
+        </ul>
+        <ul>
+            <li><a href="/settings">Settings</a></li>
+            <li><a href="/messages">Messages</a></li>
+            <li><a href="/friends">Friends</a></li>
+            <li><a href="/signout">Sign Out</a></li>
+            <li style="float: right;"><a class="active" href="/feed">Feed</a></li>
+        </ul>
+
+        <div class="profile">
+
+            <div class="avatar">
+                <img style="height: 200px;" src={{avatar}}/>
+
+            </div>
+
+            <div class="prem">
+                <a href="/premium" class="perks"><img src="https://tse4.mm.bing.net/th/id/OIP.NpbElDazg_iiSoyeg8VgaQHaHt?pid=ImgDet&rs=1" /><br />
+                Premium</a>
+            </div>
+            <div class="badges">
+                <button class="perks" onclick="myFunction('Building badge functionality soon')"><img src="https://tse1.mm.bing.net/th/id/OIP.RQCB4pfm86M8QpnCWXA9JQHaK1?pid=ImgDet&rs=1" /><br />
+                Badges</button>
+            </div>
+        </div>
+    </body>
+    <script>
+        function myFunction(id) {
+            alert(id);
+        }
+    </script>
+</html>

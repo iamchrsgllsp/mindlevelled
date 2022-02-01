@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    </head>
+    <title>MindLevelled - Roadmap</title>
+    <style>
+            ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+        }
+
+        li {
+          float: left;
+        }
+
+        li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+          background-color: #111;
+        }
+
+        .active {
+          background-color: #04AA6D;
+        }
+
+
+
+        .
+
+          }
+
+        .button {
+          background-color: #4CAF50;
+          border: none;
+          color: white;
+          padding: 15px 32px;
+          text-align: right;
+          text-decoration: none;
+          display: right;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+          border-radius:25%;
+        	height:50px;
+        }
+
+      .roadmap{
+        text-align:center;
+      }
+      .roadmap .col{
+        display:flex;
+        justify-content:space-around;
+      }
+
+      .roadmap .col-left{
+        text-align:left;
+        width:50%;
+      }
+        .roadmap .col-right{
+        text-align:right;
+          width:50%;
+      }
+        img{
+            height:200px;
+        }
+
+        button{
+            width:100%;
+        }
+    </style>
+
+    <body>
+        <ul>
+            <li><a href="/">HOME</a></li>
+            <li><a href="/signin">SIGN IN</a></li>
+            <li><a href="/contact">CONTACT</a></li>
+            <li><a href="/blog">BLOG</a></li>
+            <li style="float: right;"><a class="active" href="/api/createpost">Sign In</a></li>
+        </ul>
+
+        <div class="roadmap">
+          <h1>Mind Levelled Roadmap</h1>
+          <p>We are still in alpha build of both our website and mobile application, but here we will keep you updated of current builds, feature requests and new features</p>
+          <p>Parity between website and app is important though web has took initial focus</p>
+          <p>Our current build features: secure user creation and login, secure upload, explore feed and user profiles</p>
+          <a href="/featurerequest">request a feature</a>
+          <div class="col">
+          <div class="col-left">
+          <h2 >Website</h2>
+          <p>Current Features: User profiles, Messages and responsive mobile site</p>
+            <p>Next features: Premium, Community Badges, Friends</p>
+        </div>
+          <div class="col-right">
+          <h2 >Mobile App</h2>
+            <p>Join our discord to sign up as a beta tester<a href="https://discord.gg/qE8mkgbNB6">HERE</a></p>
+            <p>Current builds of our app are bringing current feature parity from website including User profiles and Messages</p>
+        </div>
+          </div>
+      </div>
+
+    </body>
+    <script>
+        function myFunction(id) {
+            alert(id);
+        }
+    </script>
+</html>
